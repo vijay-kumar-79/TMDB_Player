@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "TMDB Streamer",
+  "version": "1.0",
+  "description": "Adds a Play button with server selection to TMDB pages.",
+
+  "permissions": ["activeTab"],
+
+  "host_permissions": [
+    "https://www.themoviedb.org/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.themoviedb.org/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

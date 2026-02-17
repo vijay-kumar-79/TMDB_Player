@@ -1,0 +1,61 @@
+/* --- Dropdown Container --- */
+.tmdb-server-dropdown {
+    position: absolute;
+    top: 130%; /* Position it nicely below the text */
+    left: 0;
+    
+    /* Native Dark Theme Colors */
+    background-color: #032541; 
+    border: 1px solid #1f3d53;
+    
+    /* Rounded corners & strong shadow for pop-out effect */
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    
+    min-width: 120px;
+    z-index: 9999;
+    padding: 6px 0;
+    
+    /* Animation */
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.15s ease-in-out;
+    transform: translateY(0);
+}
+
+/* Hidden State */
+.tmdb-server-dropdown.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5px);
+    pointer-events: none;
+}
+
+/* --- Dropdown Items --- */
+.server-item {
+    display: block;
+    padding: 8px 16px;
+    
+    /* Text Styling */
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.1s;
+}
+
+/* Hover Effect (TMDB Teal) */
+.server-item:hover {
+    background-color: #fff;
+    color: #032541;
+}
+
+/* Ensure the icon inside the button stays white */
+/* The class .inverted is usually native, but we force it just in case */
+.glyphicons_v2.inverted {
+    filter: invert(1);
+    margin-right: 5px; /* Spacing between icon and text */
+}
