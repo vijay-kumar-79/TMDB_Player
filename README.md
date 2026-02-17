@@ -24,7 +24,7 @@
     * **Edge:** Type `edge://extensions/` in the address bar.
     * **Brave/Opera:** Go to your browser menu > Extensions.
 3.  Enable **Developer mode** (usually a toggle in the top-right corner).
-4.  Drag and drop the downloaded `tmdb_player-chromium-x.x.x.crx` file onto the extensions page.
+4.  Drag and drop the downloaded `chrome.crx` file onto the extensions page.
 5.  The TMDB Player extension will be added to your browser. Once installed, you can disable Developer mode if you desire.
 
 > **Note:** When using this method, the extension will not update automatically when a new version is released. To ensure you have the latest version of the TMDB Player extension, repeat the steps above whenever a new release is available.
